@@ -1,0 +1,563 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+html, body {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+/*********************************************** Style the Header **********************************************/
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 154px;
+    background: url("../IMAGES/backround1.png") no-repeat;
+    background-size: cover;
+}
+
+.container {
+    /* margin: 49px auto; Top & Bottom | Left & Right*/
+    justify-self: center;
+    width: 90vw;
+    height: 56px;
+    position: relative;
+    top: 49px;
+}
+
+#Logo_Menu {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    gap: 170px;
+}
+
+img[src*="logo" i] {
+    width: 142px;
+    height: 100%;
+}
+
+img[alt="Actual page indicator"] {
+    size: fit-content;
+}
+
+header #navigation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header #navigation ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+header #navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Heebo";
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#actualPage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 8px;
+    align-items: center;
+    gap: 5px;
+}
+
+header nav form {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav form button {
+    height: 24px;
+    width: 24px;
+    background: transparent;
+    border: none;
+}
+
+img[alt="search icon" i] {
+    height: 24px;
+    width: 24px;
+}
+
+header nav form input {
+    height: 24px;
+    width: 80%;
+    font-family: "Heebo";
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 10px;
+    background: transparent;
+    border: none;
+}
+
+header nav form input:focus {
+    border: none;
+    outline: none;
+    color: white;
+}
+
+header nav form input::placeholder {
+    color: white;
+}
+
+/*********************************************** Style the main **********************************************/
+
+/* Formulaire rendez-vous */
+section:first-child {
+    background: url("../IMAGES/backround1.png") no-repeat;
+    background-size: cover;
+    gap: 60px;
+}
+
+.rendez_vous {
+    padding: 100px 120px;
+}
+
+.rendez_vous form {
+    padding: 50px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.rendez_vous fieldset {
+    border: none;
+}
+
+.rendez_vous fieldset * {
+    border: none;
+}
+
+.rendez_vous legend {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.rendez_vous legend div {
+    width: fit-content;
+    background-color: #5EE088;
+    color: white;
+    gap: 10px;
+    padding: 12px 25px;
+    border: 1px solid #5EE088;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: "Heebo";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 12%;
+    line-height: auto;
+}
+
+.rendez_vous form fieldset legend > p{ 
+    /* font-family: ; */
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0%;
+    line-height: auto;
+    color: #3498DB;
+}
+
+#submit {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#infos_rendez_vous {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 50px;
+}
+
+#infos_rendez_vous > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#infos_rendez_vous > div > span {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.rendez_vous label {
+    font-family: "Heebo";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    line-height: auto;
+    display: block;
+}
+
+.rendez_vous input {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 16px 24px;
+    font-family: "Heebo";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: auto;
+}
+
+.rendez_vous select {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 16px 24px;
+    font-family: "Heebo";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: auto;
+}
+
+/* .rendez_vous select option[hidden] {
+    color: #969696;
+} */
+
+#bloc-description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+#bloc-description textarea {
+    border: 1px solid grey;
+    height: 140px;
+    border-radius: 15px;
+    padding: 20px 24px;
+    font-family: "Heebo";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#submit button {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Heebo";
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FF6F61;
+}
+
+
+
+/* Formulaire question ou suggestion */
+.question_suggestion {
+    padding: 100px 120px;
+}
+
+.question_suggestion form {
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #FAFAFA;
+}
+
+.question_suggestion fieldset {
+    border: none;
+}
+
+/* .question_suggestion fieldset * {
+    border: none;
+} */
+
+.question_suggestion legend {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.question_suggestion legend div {
+    width: fit-content;
+    background-color: #5EE088;
+    color: white;
+    gap: 10px;
+    padding: 12px 25px;
+    border: 1px solid #5EE088;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: "Heebo";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 12%;
+    line-height: auto;
+}
+
+.question_suggestion form fieldset legend > p{ 
+    /* font-family: ; */
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0%;
+    line-height: auto;
+    color: #3498DB;
+}
+
+#submit2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+#infos_formulaire2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 50px;
+}
+
+#infos_formulaire2 > div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#infos_formulaire2 > div > span {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.question_suggestion label {
+    font-family: "Heebo";
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0%;
+    line-height: auto;
+    display: block;
+}
+
+.question_suggestion input {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 16px 24px;
+    font-family: "Heebo";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: auto;
+}
+
+.question_suggestion select {
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 16px 24px;
+    font-family: "Heebo";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    line-height: auto;
+}
+
+#bloc-subject {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+#bloc-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+#bloc-details textarea {
+    border: 1px solid grey;
+    height: 140px;
+    border-radius: 15px;
+    padding: 20px 24px;
+    font-family: "Heebo";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#submit2 button {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 100px;
+    color: white;
+    font-family: "Heebo";
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #FF6F61;
+}
+
+/*********************************************** Style the footer **********************************************/
+
+footer {
+    gap: 0.625rem;
+    padding: 4.375rem 7.5rem 6.25rem 7.5rem;
+    background-color: #F5F8FA;
+}
+
+footer > div {
+    display: flex;
+}
+
+footer > div > span:first-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4.875rem;
+}
+
+footer > div > span:first-child img {
+    width: 10.625rem;
+    height: 10.625rem;
+}
+
+footer > div > span:first-child > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+}
+
+footer > div > span:first-child > div > div {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.875rem;
+}
+
+footer > div > span:first-child > div > div div {
+    display: flex;
+    gap: 0.875rem;
+    justify-content: space-between;
+}
+
+footer > div > span:first-child input {
+    padding: 1rem 1.5rem;
+    border-radius: 6.25rem;
+    background: transparent;
+    font-family: "Heebo";
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+footer > div > span:first-child button {
+    padding: 0.75rem 1.875rem;
+    border-radius: 6.25rem;
+    color: #3498DB;
+    font-family: "Heebo";
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer > div > span:first-child p {
+    color: #2677BC;
+    font-family: "Lato";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+footer > div > span:first-child > div:last-child {
+    display: flex;
+    flex-direction: row;
+    gap: 0.875rem;
+}
+
+footer > div > span:first-child > div:last-child span {
+    width: fit-content;
+    padding: 0.3125rem;
+    font-size: 1.875rem;
+    color: #2677BC;
+}
+
+footer > div > span:last-child {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.75rem;
+}
+
+footer > div > span:last-child > div:first-child {
+    display: flex;
+    gap: 3.75rem;
+    font-family: "Heebo";
+    font-weight: 500;
+}
+
+footer > div > span:last-child > div:first-child p {
+    color: #2677BC;
+    font-size: 1.5rem;
+    text-wrap: nowrap;
+}
+
+footer > div > span:last-child > div:first-child a {
+    display: block;
+    color: #63BBE9;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+footer > div > span:last-child > div:last-child {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.875rem;
+    font-family: "Heebo";
+    color: #2677BC;
+}
+
+footer > div > span:last-child > div:last-child > p {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+footer > div > span:last-child > div:last-child > div {
+    gap: 1.5rem;
+}
+
+footer > div > span:last-child > div:last-child > div > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+    width: 11.25rem;
+}
+
+footer > div > span:last-child > div:last-child > div p[name="subheading"] {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+footer > div > span:last-child > div:last-child > div p[name="text"] {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #969696;
+}

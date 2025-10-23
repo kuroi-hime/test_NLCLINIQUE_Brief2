@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/Contact_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <title>Contact</title>
+    </head>
+    <body>
+        <!-- L'entete generale du site web    -->
+        <header>
+            <!-- Le liens de navigation -->
+            <nav class="container">
+                <span id="Logo_Menu">
+                    <!-- Logo de NLCLINIQUE -->
+                     <a href="Home.html">
+                        <img src="../IMAGES/logo-bgRemoved.png" alt="Logo du clinique portant son nom 'NLCLINIQUE'">
+                     </a>
+                    <!-- Le Menu de navigation -->
+                    <div id="navigation">
+                        <ul>
+                            <li><a href="Home.html">Home</a></li>
+                            <li><a href="About.html">About</a></li>
+                            <li><a href="Doctors.html">Doctors</a></li>
+                            <li><a href="Services.html">Services</a></li>
+                            <span id="actualPage">
+                                <li><a href="">Contact</a></li>
+                                <img src="../IMAGES/icons/Vector_indicator.png" alt="Actual page indicator">
+                            </span>
+                        </ul>
+                    </div>
+                </span>
+                <!-- Formulaire pour recherche -->
+                <form>
+                    <button>
+                        <!-- <img src="../IMAGES/icons/icons8-search.svg" alt="search icon"> -->
+                        <i class="fa fa-search" aria-hidden="true" style="color:white;"></i>
+                    </button>
+                    <input text="search" placeholder="search">
+                </form>
+            </nav>
+        </header>
+
+        <!-- section de contenu de site web -->
+        <main>
+            <!-- Decoupage precis:Formulaire pour prendre rendez-vous -->
+            <section class="rendez_vous">
+                <form>
+                    <fieldset>
+                        <legend>
+                            <div>
+                                <p>Book an appointment</p>
+                            </div>
+                            <p>Book Your Appointment by Filling in This Form Below</p>
+                        </legend>
+                        <div id="submit">
+                            <div id="infos_rendez_vous">
+                                <div>
+                                    <span>
+                                        <label for="name1">Name</label>
+                                        <input type="text" name="name" id="name1" value="mymail@|" placeholder="Input Name">
+                                    </span>
+                                    <span>
+                                        <label for="email1">Email</label>
+                                        <input type="email" name="email" id="email1" placeholder="Input Email">
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label for="doctor_type">Doctor Type</label>
+                                        <select name="doctor type" id="doctor_type">
+                                            <option value="" disabled selected hidden>Choose Doctor Type</option>
+                                        </select>
+                                    </span>
+                                    <span>
+                                        <label for="doctor_name">Doctor Name</label>
+                                        <select name="doctor name" id="doctor_name">
+                                            <option value="" disabled selected hidden>Choose Doctor Name</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <label for="date">Date</label>
+                                        <input type="date" name="date" id="date" placeholder="Choose Date">
+                                    </span>
+                                    <span>
+                                        <label for="time">Time</label>
+                                        <input type="time" name="time" id="time" placeholder="Choose Time">
+                                    </span>
+                                </div>
+                                <div id="bloc-description">
+                                    <label for="description">Description</label>
+                                    <textarea name="description" id="description" placeholder="Description">Hallo world!</textarea>
+                                </div>
+                            </div>
+                            <button>Send <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+            <!-- Decoupage precis:Formulaire pour poser une question ou une suggestion -->
+            <section class="question_suggestion">
+                <form>
+                    <fieldset>
+                        <legend>
+                            <div>
+                                <p>Contact us</p>
+                            </div>
+                            <p>Ask a question or make a suggestion by Filling This Form Below</p>
+                        </legend>
+                        <div id="submit2">
+                            <div id="infos_formulaire2">
+                                <div>
+                                    <span>
+                                        <label for="name2">Name</label>
+                                        <input type="text" name="name" id="name2" value="mymail@|" placeholder="Input Name">
+                                    </span>
+                                    <span>
+                                        <label for="email2">Email</label>
+                                        <input type="email" name="email" id="email2" placeholder="Input Email">
+                                    </span>
+                                </div>
+                                <div id="bloc-subject">
+                                    <label for="subject">Subject</label>
+                                    <select name="subject" id="subject">
+                                        <option value="" selected hidden>Choose either a question or a suggetion</option>
+                                        <option value="Question">Question</option>
+                                        <option value="Suggestion">Suggestion</option>
+                                    </select>
+                                </div>
+                                <div id="bloc-details">
+                                    <label for="details">More details</label>
+                                    <textarea name="more details" id="details" placeholder="What’s your question/suggestion about?">What’s your question/suggestion about?</textarea>
+                                </div>
+                            </div>
+                            <button>Send <i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <!-- Le pied de page -->
+        <footer>
+            <div>
+                <span>
+                    <img src="../IMAGES/logo..png" alt="Logo du clinique portant son nom 'NLCLINIQUE'">
+                    <div>
+                        <div>
+                            <div>
+                                <input type="email" name="email" placeholder="Email Address">
+                                <button>Subscribe</button>
+                            </div>
+                            <p>Nullam ultrices lorem et augue placerat blandit. Nam nisl lacus, imperdiet quis dui pretium, pretium vehicula turpis. Fusce scelerisque fermentum lacinia.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span><i class="fab fa-whatsapp"></i></span>
+                        <span><i class="fab fa-facebook"></i></span>
+                        <span><i class="fab fa-instagram"></i></span>
+                    </div>
+                </span>
+                <span>
+                    <div>
+                        <span>
+                            <p>Quick Links</p>
+                            <div>
+                                <a href="">Home</a>
+                                <a href="">About me</a>
+                                <a href="">Portfolio</a>
+                                <a href="">Blog</a>
+                            </div>
+                        </span>
+                        <span>
+                            <p>Work Category</p>
+                            <div>
+                                <a href="">Architecture</a>
+                                <a href="">Nature</a>
+                                <a href="">Modelling</a>
+                                <a href="">Event</a>
+                                <a href="">Branding</a>
+                            </div>
+                        </span>
+                        <span>
+                            <p>Legal</p>
+                            <div>
+                                <a href="">Return Policy</a>
+                                <a href="">Shipping Policy</a>
+                                <a href="">Privacy Policy</a>
+                                <a href="">Terms of Services</a>
+                            </div>
+                        </span>
+                    </div>
+                    <div>
+                        <p>Location</p>
+                        <div>
+                            <div>
+                                <p name="subheading">Surabaya</p>
+                                <p name="text">Jl. Danau Jonge 12, Mayjend Sungkono, Surabaya</p>
+                            </div>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </footer>
+    </body>
+</html>
